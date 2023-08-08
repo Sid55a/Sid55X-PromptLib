@@ -32,13 +32,13 @@ function Form({ type, post, setPost, submitting, handleSubmit }) {
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Tag{" "}
             <span className="font-normal">
-              (#product, #webdevlopment, #idea)
+              (product, webdevlopment, idea)
             </span>
           </span>
           <input
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
-            placeholder="write tags without # symbol eg:- web,ai,java"
+            placeholder="eg:- web,ai,java"
             required
             className="form_input"
           ></input>
